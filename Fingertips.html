@@ -70,10 +70,16 @@
             height: auto;
             margin: 0.5%;
         }
-        .use-cases {
+        .product-detail {
             display: flex;
-            flex-direction: column;
-            gap: 20px;
+            justify-content: center; /* Centering the product structure image */
+            padding: 20px 0;
+        }
+        .product-detail img {
+            max-width: 60%; /* Increase size if needed */
+            height: auto;
+            margin: 0 auto;
+            display: block; /* Ensure image is treated as a block element */
         }
         .use-case {
             display: flex;
@@ -92,11 +98,27 @@
             height: auto;
             margin: 0.5%;
         }
-        .use-case h3 {
-            width: 100%;
+        .key-selling-points {
+            margin: 40px 0;
+            text-align: left;
+            padding: 0 10%;
+        }
+        .key-selling-points h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
             text-align: center;
-            font-size: 1.2em;
+        }
+        .key-selling-points ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .key-selling-points li {
+            font-size: 1.5em;
             margin: 10px 0;
+        }
+        .key-selling-points .description {
+            font-size: 0.4em;
+            margin-bottom: 30px;
         }
         footer {
             background-color: #333;
@@ -120,17 +142,17 @@
     
     <div class="container">
         <div class="section">
+            <h2>FingerTips Intro</h2>
+            <!-- 替换下面的段落内容为你的产品介绍 -->
+            <p>FingerTips Using modern technology, we've integrated the functionality of a mouse into a stylish ring, making your interactions more convenient.</p>
+        </div>
+
+        <div class="section">
             <h2>Fingertips Video</h2>
             <!-- 替换下面的视频链接为你的演示视频链接 -->
             <div style="text-align: center;">
                 <iframe width="80%" height="500" src="产品图.mp4" frameborder="0" allowfullscreen></iframe>
             </div>
-        </div>
-
-        <div class="section">
-            <h2>FingerTips Intro</h2>
-            <!-- 替换下面的段落内容为你的产品介绍 -->
-            <p>FingerTips Using modern technology, we've integrated the functionality of a mouse into a stylish ring, making your interactions more convenient.</p>
         </div>
 
         <div class="section">
@@ -144,10 +166,35 @@
         </div>
 
         <div class="section">
+            <h2>Product Detail</h2>
+            <div class="product-detail">
+                <!-- 替换下面的图片链接为你的产品图片 -->
+                <img src="产品结构图.png" alt="产品结构图">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Key Selling Points</h2>
+            <div class="key-selling-points">
+                <ul>
+                    <li>Deep Interaction
+                        <div class="description">Offer an immersive and intuitive user experience, allowing for precise control and seamless interaction with your devices.</div>
+                    </li>
+                    <li>Multi-Scenario Use
+                        <div class="description">Whether you're working in an office, presenting in a meeting, or relaxing at home, the ring mouse adapts to various environments effortlessly.</div>
+                    </li>
+                    <li>Ultra-Silent
+                        <div class="description">Operate with minimal noise, ensuring a quiet and distraction-free environment.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
             <h2>Scenarios</h2>
             <div class="use-cases">
                 <div class="use-case">
-                    <h3>Draw & Business</h3>
+                    <h3>Creative Drawing & Business Trip</h3>
                     <!-- 替换下面的图片链接为你的场景图片 -->
                     <img src="场景一1.jpeg" alt="使用场景1">
                     <img src="场景一2.jpeg" alt="使用场景1">
@@ -157,9 +204,10 @@
                     <!-- 替换下面的图片链接为你的场景图片 -->
                     <img src="场景二1.jpeg" alt="使用场景2">
                     <img src="场景二3.jpeg" alt="使用场景2">
+		   <img src="场景二2.png" alt="使用场景2">
                 </div>
                 <div class="use-case">
-                    <h3>Leisure & Entertainment</h3>
+                    <h3>Leisure</h3>
                     <!-- 替换下面的图片链接为你的场景图片 -->
                     <img src="场景三1.jpeg" alt="使用场景3">
                     <img src="场景三2.png" alt="使用场景3">
